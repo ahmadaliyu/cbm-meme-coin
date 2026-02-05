@@ -1,0 +1,29 @@
+.token-card {
+  background: var(--bg-dark);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  border: 1px solid rgba(247, 147, 26, 0.2);
+}
+
+.token-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary);
+}
+
+.token-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.token-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.token-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

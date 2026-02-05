@@ -1,0 +1,25 @@
+.tokenomics {
+  padding: 100px 0;
+  background: var(--bg-card);
+}
+
+.tokenomics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.tax-info {
+  text-align: center;
+  padding: 30px;
+  background: rgba(247, 147, 26, 0.1);
+  border-radius: 20px;
+  border: 1px solid var(--primary);
+}
+
+.tax-info h3 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 10px;
+}

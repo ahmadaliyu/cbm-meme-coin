@@ -1,0 +1,57 @@
+.how-to-buy {
+  padding: 100px 0;
+  background: var(--bg-dark);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.contract-address {
+  text-align: center;
+  padding: 40px;
+  background: var(--bg-card);
+  border-radius: 20px;
+}
+
+.contract-address h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.address-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.address-box code {
+  background: var(--bg-dark);
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 1px solid rgba(247, 147, 26, 0.3);
+  word-break: break-all;
+  color: var(--text-primary);
+}
+
+.address-box button {
+  padding: 15px 25px;
+  background: var(--gradient);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.address-box button:hover {
+  transform: scale(1.05);
+}

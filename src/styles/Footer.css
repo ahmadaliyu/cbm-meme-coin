@@ -1,0 +1,31 @@
+.footer {
+  padding: 50px 0;
+  background: var(--bg-dark);
+  border-top: 1px solid rgba(247, 147, 26, 0.2);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  max-width: 600px;
+  margin: 20px auto 0;
+  opacity: 0.7;
+}
