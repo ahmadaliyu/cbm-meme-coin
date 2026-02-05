@@ -30,3 +30,17 @@
   background: var(--primary);
   color: white;
 }
+
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}

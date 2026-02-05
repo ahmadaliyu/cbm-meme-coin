@@ -30,12 +30,45 @@
 }
 
 @media (max-width: 768px) {
+  .about {
+    padding: 60px 0;
+  }
+
   .about-content {
     flex-direction: column;
     text-align: center;
+    gap: 30px;
+  }
+
+  .about-image img {
+    max-width: 280px;
+  }
+
+  .about-text p {
+    font-size: 1rem;
   }
 
   .stats {
     justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 0;
+  }
+
+  .about-image img {
+    max-width: 220px;
+  }
+
+  .about-text p {
+    font-size: 0.9rem;
+  }
+
+  .stats {
+    gap: 20px;
   }
 }

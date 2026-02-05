@@ -16,3 +16,34 @@
   gap: 20px;
   flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+  .community {
+    padding: 60px 0;
+  }
+
+  .community > .container > p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .community {
+    padding: 40px 0;
+  }
+
+  .community > .container > p {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}

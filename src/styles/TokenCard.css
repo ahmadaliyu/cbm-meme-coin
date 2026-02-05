@@ -27,3 +27,41 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .token-card {
+    padding: 25px 15px;
+    border-radius: 15px;
+  }
+
+  .token-icon {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .token-card h3 {
+    font-size: 1rem;
+  }
+
+  .token-card p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .token-card {
+    padding: 20px 12px;
+  }
+
+  .token-icon {
+    font-size: 2rem;
+  }
+
+  .token-card h3 {
+    font-size: 0.9rem;
+  }
+
+  .token-card p {
+    font-size: 1rem;
+  }
+}

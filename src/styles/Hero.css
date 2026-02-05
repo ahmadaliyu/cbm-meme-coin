@@ -85,29 +85,55 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 70px;
+  }
+
   .hero-content {
     flex-direction: column;
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px 15px;
+    gap: 30px;
   }
 
   .glowing-text {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .tagline {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .description {
     margin: 0 auto;
+    font-size: 1rem;
   }
 
   .hero-buttons {
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
   }
 
   .hero-image img {
-    max-width: 300px;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glowing-text {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .hero-image img {
+    max-width: 200px;
   }
 }

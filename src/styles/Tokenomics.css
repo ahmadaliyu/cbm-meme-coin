@@ -23,3 +23,42 @@
   color: var(--primary);
   margin-bottom: 10px;
 }
+
+@media (max-width: 768px) {
+  .tokenomics {
+    padding: 60px 0;
+  }
+
+  .tokenomics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .tax-info {
+    padding: 20px;
+  }
+
+  .tax-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .tax-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tokenomics {
+    padding: 40px 0;
+  }
+
+  .tokenomics-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .tax-info h3 {
+    font-size: 1.3rem;
+  }
+}

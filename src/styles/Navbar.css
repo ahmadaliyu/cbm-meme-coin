@@ -40,7 +40,11 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 15px 20px;
+    padding: 12px 15px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
   }
 
   .nav-links {

@@ -48,6 +48,18 @@ h2 {
 
 @media (max-width: 768px) {
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
   }
 }
