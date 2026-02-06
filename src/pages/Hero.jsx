@@ -7,14 +7,14 @@ function Hero() {
     <section className="hero">
       <div className="hero-content">
         <div className="hero-text">
-          <h1 className="glowing-text">$CBM</h1>
-          <p className="tagline">The Most Based Meme Coin on the Block 🚀</p>
+          <h1 className="glowing-text">Central Bank Of Meme Coins</h1>
+          <p className="tagline">The Most Based Meme Coin on the Block</p>
           <p className="description">
             Join the revolution! CBM is not just a meme coin, it's a movement. 
             Built by the community, for the community.
           </p>
           <div className="hero-buttons">
-            <Button href="#how-to-buy" variant="primary">Buy $CBM</Button>
+            <Button href="#how-to-buy" variant="primary">Buy Now</Button>
             <Button href="#" variant="secondary">View Chart</Button>
           </div>
         </div>

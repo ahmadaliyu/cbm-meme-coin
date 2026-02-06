@@ -16,12 +16,12 @@ function HowToBuy() {
     {
       number: 3,
       title: 'Go to Raydium',
-      description: 'Connect your wallet to Raydium or Jupiter and paste the $CBM contract address.'
+      description: 'Connect your wallet to Raydium or Jupiter and paste the CBM contract address.'
     },
     {
       number: 4,
-      title: 'Swap for $CBM',
-      description: 'Swap your SOL for $CBM and join the community!'
+      title: 'Swap for CBM',
+      description: 'Swap your SOL for CBM and join the community!'
     },
   ]
 
@@ -34,7 +34,7 @@ function HowToBuy() {
   return (
     <section id="how-to-buy" className="how-to-buy">
       <div className="container">
-        <h2>How to Buy $CBM</h2>
+        <h2>How to Buy CBM</h2>
         <div className="steps">
           {steps.map((step) => (
             <Step 

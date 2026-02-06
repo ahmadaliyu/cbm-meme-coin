@@ -6,7 +6,7 @@ function Community() {
   return (
     <section id="community" className="community">
       <div className="container">
-        <h2>Join the $CBM Community</h2>
+        <h2>Join the CBM Community</h2>
         <p>Be part of the most based community in crypto!</p>
         <div className="social-links">
           <SocialButton href="#" platform="twitter">

@@ -6,7 +6,7 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="container">
-        <h2>About $CBM</h2>
+        <h2>About CBM</h2>
         <div className="about-content">
           <div className="about-image">
             <img src={cbm2} alt="CBM Community" />

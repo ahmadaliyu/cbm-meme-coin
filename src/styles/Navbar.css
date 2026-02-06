@@ -13,12 +13,15 @@
 }
 
 .logo {
-  font-size: 2rem;
-  font-weight: bold;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .nav-links {
