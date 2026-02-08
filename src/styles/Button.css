@@ -1,23 +1,45 @@
 .btn {
-  padding: 15px 40px;
-  border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: bold;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+  left: 100%;
 }
 
 .btn-primary {
   background: var(--gradient);
   color: white;
+  box-shadow: 0 4px 20px rgba(247, 147, 26, 0.3);
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(247, 147, 26, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(247, 147, 26, 0.5);
 }
 
 .btn-secondary {
@@ -27,20 +49,20 @@
 }
 
 .btn-secondary:hover {
-  background: var(--primary);
-  color: white;
+  background: rgba(247, 147, 26, 0.1);
+  transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
   .btn {
-    padding: 12px 30px;
-    font-size: 1rem;
+    padding: 12px 24px;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
   .btn {
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-size: 0.9rem;
   }
 }

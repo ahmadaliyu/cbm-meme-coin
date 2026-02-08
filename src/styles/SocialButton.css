@@ -1,47 +1,79 @@
 .social-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 15px 30px;
-  border-radius: 50px;
+  gap: 12px;
+  padding: 14px 28px;
+  border-radius: 12px;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: all 0.3s;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  transition: left 0.5s ease;
+}
+
+.social-btn:hover::before {
+  left: 100%;
 }
 
 .social-btn.twitter {
-  background: #1da1f2;
+  background: linear-gradient(135deg, #1da1f2 0%, #0d8ddb 100%);
   color: white;
+  box-shadow: 0 4px 16px rgba(29, 161, 242, 0.3);
 }
 
 .social-btn.telegram {
-  background: #0088cc;
+  background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
   color: white;
+  box-shadow: 0 4px 16px rgba(0, 136, 204, 0.3);
 }
 
 .social-btn.discord {
-  background: #5865f2;
+  background: linear-gradient(135deg, #5865f2 0%, #4752c4 100%);
   color: white;
+  box-shadow: 0 4px 16px rgba(88, 101, 242, 0.3);
 }
 
 .social-btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+.social-btn.twitter:hover {
+  box-shadow: 0 8px 24px rgba(29, 161, 242, 0.5);
+}
+
+.social-btn.telegram:hover {
+  box-shadow: 0 8px 24px rgba(0, 136, 204, 0.5);
+}
+
+.social-btn.discord:hover {
+  box-shadow: 0 8px 24px rgba(88, 101, 242, 0.5);
 }
 
 @media (max-width: 768px) {
   .social-btn {
-    padding: 12px 25px;
-    font-size: 1rem;
-    gap: 8px;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+    gap: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .social-btn {
-    padding: 12px 30px;
-    font-size: 0.95rem;
+    padding: 12px 28px;
+    font-size: 0.9rem;
     width: 100%;
     max-width: 200px;
     justify-content: center;

@@ -4,31 +4,39 @@
 
 .stat-number {
   display: block;
+  font-family: var(--font-heading);
   font-size: 2.5rem;
-  font-weight: bold;
-  color: var(--primary);
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 4px;
 }
 
 .stat-label {
   color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
   .stat-number {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .stat-label {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 480px) {
   .stat-number {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .stat-label {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }

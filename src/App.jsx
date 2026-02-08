@@ -1,4 +1,5 @@
 import './styles/global.css'
+import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './layouts/Navbar'
 import Footer from './layouts/Footer'
 import Hero from './pages/Hero'
@@ -10,16 +11,18 @@ import FloatingImages from './components/FloatingImages'
 
 function App() {
   return (
-    <div className="app">
-      <FloatingImages />
-      <Navbar />
-      <Hero />
-      <About />
-      <Tokenomics />
-      <HowToBuy />
-      <Community />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="app">
+        <FloatingImages />
+        <Navbar />
+        <Hero />
+        <About />
+        <Tokenomics />
+        <HowToBuy />
+        <Community />
+        <Footer />
+      </div>
+    </ThemeProvider>
   )
 }
 

@@ -1,46 +1,61 @@
 .step {
   text-align: center;
-  padding: 30px;
+  padding: 32px 24px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(247, 147, 26, 0.1);
 }
 
 .step-number {
-  width: 60px;
-  height: 60px;
+  width: 56px;
+  height: 56px;
   background: var(--gradient);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
   margin: 0 auto 20px;
+  box-shadow: 0 8px 24px rgba(247, 147, 26, 0.3);
 }
 
 .step h3 {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  color: var(--primary);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: var(--text-primary);
 }
 
 .step p {
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.7;
+  font-size: 0.95rem;
 }
 
 @media (max-width: 768px) {
   .step {
-    padding: 20px 10px;
+    padding: 24px 16px;
   }
 
   .step-number {
-    width: 50px;
-    height: 50px;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
   }
 
   .step h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
 
@@ -51,17 +66,17 @@
 
 @media (max-width: 480px) {
   .step {
-    padding: 15px 10px;
+    padding: 20px 14px;
   }
 
   .step-number {
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
     font-size: 1rem;
   }
 
   .step h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .step p {

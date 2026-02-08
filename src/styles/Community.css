@@ -1,13 +1,19 @@
 .community {
-  padding: 100px 0;
+  padding: 120px 0;
   background: var(--bg-card);
   text-align: center;
+  transition: background 0.3s ease;
+  position: relative;
 }
 
 .community > .container > p {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: var(--text-secondary);
-  margin-bottom: 40px;
+  margin-bottom: 48px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
 }
 
 .social-links {
@@ -19,22 +25,22 @@
 
 @media (max-width: 768px) {
   .community {
-    padding: 60px 0;
+    padding: 80px 0;
   }
 
   .community > .container > p {
     font-size: 1rem;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
 
   .social-links {
-    gap: 15px;
+    gap: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .community {
-    padding: 40px 0;
+    padding: 60px 0;
   }
 
   .community > .container > p {
