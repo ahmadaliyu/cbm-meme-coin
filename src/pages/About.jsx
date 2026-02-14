@@ -13,9 +13,7 @@ function About() {
           </div>
           <div className="about-text">
             <p>
-              CBM started as a meme but quickly evolved into one of the most 
-              vibrant communities in crypto. Our mission is simple: bring fun 
-              back to crypto while building real value for our holders.
+              The Central Bank of Memecoins is the world’s first (and only) financial institution dedicated entirely to memes as currency. Founded in the cryptoverse where laughs meet blockchain, CBM doesn’t just manage coins—it manages hype, virality, and the power of the internet to move markets.
             </p>
             <p>
               With a dedicated team and passionate community, CBM is set to 

@@ -1,22 +1,24 @@
 import Button from '../components/Button'
 import '../styles/Hero.css'
-import cbm1 from '../assets/cbm-1.jpeg'
+import cbm1 from '../assets/cbom-new.jpeg'
+import heroBg from '../assets/hero.jpeg'
 
 function Hero() {
   return (
     <section className="hero" id="hero">
+      <div className="hero-bg-image" style={{ backgroundImage: `url(${heroBg})` }}></div>
       <div className="hero-bg-gradient"></div>
       <div className="hero-content">
         <div className="hero-text">
-          <span className="hero-badge">🚀 The Future of Meme Finance</span>
+          <span className="hero-badge">The Future of Meme Finance</span>
           <h1 className="glowing-text">
             Central Bank<br />
             <span className="highlight">Of Meme Coins</span>
           </h1>
-          <p className="tagline">The Most Based Meme Coin on the Block</p>
+          <p className="tagline">Where Memes Become Currency</p>
           <p className="description">
             Join the revolution! CBM is not just a meme coin, it's a movement. 
-            Built by the community, for the community. Your gateway to decentralized fun.
+            Built by the community, for the community.
           </p>
           <div className="hero-buttons">
             <Button href="#how-to-buy" variant="primary">Buy Now</Button>

@@ -7,6 +7,23 @@
   overflow: hidden;
 }
 
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.55;
+  z-index: 0;
+}
+
+[data-theme="light"] .hero-bg-image {
+  opacity: 0.6;
+}
+
 .hero-bg-gradient {
   position: absolute;
   top: 0;
@@ -16,9 +33,16 @@
   background: 
     radial-gradient(ellipse at 20% 20%, rgba(247, 147, 26, 0.15) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 80%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at center, var(--bg-card) 0%, var(--bg-dark) 70%);
+    radial-gradient(ellipse at center, rgba(26, 26, 46, 0.55) 0%, rgba(10, 10, 10, 0.6) 70%);
   transition: background 0.3s ease;
-  z-index: 0;
+  z-index: 1;
+}
+
+[data-theme="light"] .hero-bg-gradient {
+  background: 
+    radial-gradient(ellipse at 20% 20%, rgba(247, 147, 26, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.5) 0%, rgba(248, 249, 250, 0.55) 70%);
 }
 
 .hero-content {
@@ -29,7 +53,7 @@
   padding: 60px;
   gap: 60px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
@@ -143,16 +167,19 @@
 
 .image-glow {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 1000px;
+  height: 1000px;
   background: radial-gradient(circle, rgba(247, 147, 26, 0.3) 0%, transparent 70%);
   filter: blur(60px);
   animation: pulse 4s ease-in-out infinite;
 }
 
 .hero-image img {
-  max-width: 500px;
+  max-width: 1100px;
+  min-height: 600px;
   width: 100%;
+  height: auto;
+  object-fit: cover;
   border-radius: 24px;
   box-shadow: 0 25px 80px rgba(247, 147, 26, 0.25), 0 0 0 1px rgba(247, 147, 26, 0.1);
   position: relative;
@@ -210,7 +237,8 @@
   .hero-content { padding: 40px; gap: 40px; }
   .glowing-text { font-size: 3.2rem; }
   .glowing-text .highlight { font-size: 2.6rem; }
-  .hero-image img { max-width: 400px; }
+  .hero-image img { max-width: 800px; min-height: 450px; }
+  .image-glow { width: 750px; height: 750px; }
 }
 
 @media (max-width: 768px) {
@@ -224,8 +252,8 @@
   .hero-buttons { justify-content: center; flex-wrap: wrap; }
   .hero-stats { justify-content: center; gap: 32px; }
   .stat-value { font-size: 1.5rem; }
-  .hero-image img { max-width: 350px; }
-  .image-glow { width: 280px; height: 280px; }
+  .hero-image img { max-width: 600px; min-height: 350px; }
+  .image-glow { width: 550px; height: 550px; }
   .scroll-indicator { display: none; }
 }
 
@@ -237,5 +265,6 @@
   .description { font-size: 0.9rem; }
   .hero-stats { gap: 20px; flex-wrap: wrap; }
   .stat-value { font-size: 1.3rem; }
-  .hero-image img { max-width: 280px; }
+  .hero-image img { max-width: 450px; min-height: 280px; }
+  .image-glow { width: 400px; height: 400px; }
 }

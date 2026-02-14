@@ -5,8 +5,8 @@ function Tokenomics() {
   const tokenData = [
     { icon: '💰', title: 'Total Supply', value: '1,000,000,000 CBM' },
     { icon: '🔥', title: 'Burned', value: '50% at Launch' },
-    { icon: '💧', title: 'Liquidity', value: '40% Locked' },
-    { icon: '🎁', title: 'Marketing', value: '10% for Growth' },
+    { icon: '💧', title: 'Liquidity', value: '100% Locked' },
+    // { icon: '🎁', title: 'Marketing', value: '10% for Growth' },
   ]
 
   return (
@@ -23,10 +23,10 @@ function Tokenomics() {
             />
           ))}
         </div>
-        <div className="tax-info">
+        {/* <div className="tax-info">
           <h3>Transaction Tax: 0%</h3>
           <p>No buy or sell tax! What you see is what you get.</p>
-        </div>
+        </div> */}
       </div>
     </section>
   )

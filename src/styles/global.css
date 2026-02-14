@@ -19,8 +19,8 @@
   --shadow-glow: 0 0 40px rgba(247, 147, 26, 0.3);
   --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.3);
   --border-subtle: rgba(247, 147, 26, 0.15);
-  --font-heading: 'Orbitron', sans-serif;
-  --font-body: 'Space Grotesk', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 
 /* Dark Theme (default) */
