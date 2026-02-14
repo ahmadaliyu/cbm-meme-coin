@@ -1,6 +1,6 @@
 import Button from '../components/Button'
 import '../styles/Hero.css'
-import cbm1 from '../assets/cbom-new.jpeg'
+// import cbm1 from '../assets/cbom-new.jpeg'
 import heroBg from '../assets/hero.jpeg'
 
 function Hero() {
@@ -39,10 +39,10 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="hero-image">
+        {/* <div className="hero-image">
           <div className="image-glow"></div>
           <img src={cbm1} alt="CBM Coin" className="floating" />
-        </div>
+        </div> */}
       </div>
       <div className="scroll-indicator">
         <span>Scroll to explore</span>
