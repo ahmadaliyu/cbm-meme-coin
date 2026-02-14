@@ -19,11 +19,11 @@ function About() {
               With a dedicated team and passionate community, CBM is set to 
               take over the meme coin space. Don't miss out on the next big thing!
             </p>
-            <div className="stats">
+            {/* <div className="stats">
               <Stat number="10K+" label="Holders" />
               <Stat number="$1M+" label="Market Cap" />
               <Stat number="100%" label="Community Owned" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

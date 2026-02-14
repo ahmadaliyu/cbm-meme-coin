@@ -24,7 +24,7 @@ function Hero() {
             <Button href="#how-to-buy" variant="primary">Buy Now</Button>
             <Button href="#tokenomics" variant="secondary">Tokenomics</Button>
           </div>
-          <div className="hero-stats">
+          {/* <div className="hero-stats">
             <div className="hero-stat">
               <span className="stat-value">50K+</span>
               <span className="stat-label">Holders</span>
@@ -37,7 +37,7 @@ function Hero() {
               <span className="stat-value">100%</span>
               <span className="stat-label">Community</span>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* <div className="hero-image">
           <div className="image-glow"></div>
