@@ -25,7 +25,7 @@ function HowToBuy() {
     },
   ]
 
-  const contractAddress = 'COMING SOON...'
+  const contractAddress = '2GSjM2dayW9ugCagY3r6yS6W2GnGtSaMLnbRhmp3pump'
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(contractAddress)
@@ -49,7 +49,7 @@ function HowToBuy() {
           <h3>Contract Address</h3>
           <div className="address-box">
             <code>{contractAddress}</code>
-            <button onClick={copyToClipboard}>📋 Copy</button>
+            <button onClick={copyToClipboard}>Copy</button>
           </div>
         </div>
       </div>
